@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Midun Kumar H</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="navbar-logo">
+      <img src="LOGO.png" alt="Logo">
+    </div>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="#container">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li class="dropdown">
+          <a href="#achievements">Achievements</a>
+          <div class="dropdown-content">
+            <a href="#projects">Projects</a>
+            <a href="#certificates">Certificates</a>
+          </div>
+        </li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="search-box">
+      <input type="text" placeholder="Search...">
+    </div>
+  </div>  
+
+  <!-- Profile Section -->
+  <div id="container" class="container">
+    <div class="text">
+      <h1>Hi, I'm <span>Midun Kumar H</span>, a Python and Networking enthusiast.</h1>
+    </div>
+    <div class="container">
+
+      <button
+        onclick="window.location.href='https://drive.google.com/file/d/1B4uDH3BJmxlqeRFvCJ4gcN7SY0khdLuz/view?usp=sharing'">
+        Resume
+      </button>
+
+    </div>
+    <div class="profile-image">
+      <img src="IMG-20240324-WA0039.jpg" alt="Profile Image">
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div id="about" class="about">
+    <div class="profile-image2">
+      <img src="MIDUN KUMAR H_22EC078.JPG" alt="Profile Image 2">
+    </div>
+    <div class="abt">
+      <h1>About</h1>
+    </div>
+    <div class="con">
+      <p>
+        Hello, I'm <span>Midun Kumar H</span>, currently pursuing my Bachelor of Engineering in Electronics and
+        Communication Engineering at Sri Eshwar College of Engineering, Coimbatore. With a keen interest in networking,
+        I'm driven by a passion for exploring the digital realm and creating innovative solutions.
+      </p>
+    </div>
+  </div>
+
+  <!-- Achievements Section -->
+  <div id="achievements" class="achievements">
+    <h1>Achievements</h1>
+    <!-- Bus Attendance System Project -->
+    <div>
+      <h1>PROJECTS</h1>
+      <section id="projects">
+
+        <!-- Bus Attendance System Project -->
+        <div class="project-card">
+          <h2>
+            <p style="color: rgb(0, 0, 0);">Bus Attendance System (Group Project) - 2024 </p>
+          </h2>
+          <div class="project-card-bottom">
+            <div class="project-card-left">
+              <img
+                src="DALL·E 2025-03-22 10.39.24 - A modern college bus parked in front of a university campus. The bus is bright yellow with black tinted windows and has 'COLLEGE BUS' written on the s.webp"
+                alt="Bus Attendance System" class="project-image left">
+            </div>
+            <div class="project-content">
+              <p>The Bus Attendance Monitoring System automates bus entry tracking in schools and colleges.
+                A manual attendance system is prone to errors, leading to inaccurate records and inefficiencies.
+                To overcome this, we developed a project that utilizes an RFID reader to track bus entry and exit times
+                accurately.
+              </p>
+            </div>
+          </div>
+          <p><strong>Tech Stack:</strong> Raspberry Pi Pico, RFID Reader, RFID Scanner, ESP-32</p>
+        </div>
+        <!-- Packet Sniffer Project -->
+        <div class="project-card">
+          <h2>
+            <p style="color: rgb(0, 0, 0);">Packet Sniffer Using Python (Individual Project) - 2024 </p>
+          </h2>
+          <div class="project-card-bottom">
+            <div class="project-card-left">
+              <img src="pac.webp" alt="Packet Sniffer" class="project-image right">
+            </div>
+            <div class="project-content">
+              <p>A Python-based packet sniffer that captures and analyzes network traffic using the Scapy library.
+                It logs packet details in real-time, saves them to a .pcap file for further analysis (e.g., in Wireshark),
+                and supports filtering specific types of packets. This tool is useful for learning network protocols and
+                debugging network issues.
+              </p>
+            </div>
+          </div>
+          <p><strong>Tech Stack:</strong> Python, TCP/UDP/ICMP Protocol</p>
+        </div>
+        <!---iv bag-->
+         <div class="project-card">
+          <h2>
+            <p style="color: rgb(0, 0, 0);">Smart Iv Drip Bag Monitoring System- 2025 </p>
+          </h2>
+          <div class="project-card-bottom">
+            <div class="project-card-left">
+              <img src="Smart Iv Drip Bag Mo.png" alt="Smart Iv Drip Bag Monitoring System" class="project-image right">
+            </div>
+            <div class="project-content">
+              <p>Developed a smart IV bag monitoring system to detect fluid levels and alert medical staff in real time. 
+ Integrated sensor data with a microcontroller and implemented threshold-based alerting logic. 
+ Aligned with SDG 3 (Good Health and Well-Being) by enhancing patient safety and reducing manual monitoring.
+              </p>
+            </div>
+          </div>
+          <p><strong>Tech Stack:</strong> ESP,Load cell,hx711 </p>
+        </div>
+        
+      </section>
+      <header>
+        <h1>My Certificates</h1>
+      </header>
+      
+
+
+
+    </div>
+
+
+  </div>
+  
+
+</body>
+
+</html>

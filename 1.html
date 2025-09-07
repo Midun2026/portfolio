@@ -1,0 +1,75 @@
+<!-- Coding Journey Section -->
+<!-- Coding Journey Section -->
+<div id="coding-journey" style="padding: 40px; background-color: #f9f9f9; text-align: center;">
+  <h2 style="font-size: 32px; margin-bottom: 30px; color: #333;">Coding Journey</h2>
+  <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 30px;">
+
+    <!-- LeetCode -->
+    <div onclick="showNote('leetcode')" style="display: flex; flex-direction: column; align-items: center; cursor: pointer; transition: transform 0.3s ease;">
+      <img src="leetcode.png" alt="LeetCode Logo" style="width: 80px; height: 80px; object-fit: contain; border-radius: 8px; margin-bottom: 10px;">
+      <p style="font-size: 16px; color: #555;">LeetCode</p>
+    </div>
+
+    <!-- Skillrack -->
+    <div onclick="showNote('skillrack')" style="display: flex; flex-direction: column; align-items: center; cursor: pointer; transition: transform 0.3s ease;">
+      <img src="skillrack.png" alt="Skillrack Logo" style="width: 80px; height: 80px; object-fit: contain; border-radius: 8px; margin-bottom: 10px;">
+      <p style="font-size: 16px; color: #555;">Skillrack</p>
+    </div>
+
+    <!-- CodeChef -->
+    <div onclick="showNote('codechef')" style="display: flex; flex-direction: column; align-items: center; cursor: pointer; transition: transform 0.3s ease;">
+      <img src="codechef.png" alt="CodeChef Logo" style="width: 80px; height: 80px; object-fit: contain; border-radius: 8px; margin-bottom: 10px;">
+      <p style="font-size: 16px; color: #555;">CodeChef</p>
+    </div>
+
+    <!-- HackerRank -->
+    <div onclick="showNote('hackerrank')" style="display: flex; flex-direction: column; align-items: center; cursor: pointer; transition: transform 0.3s ease;">
+      <img src="hackerrank.png" alt="HackerRank Logo" style="width: 80px; height: 80px; object-fit: contain; border-radius: 8px; margin-bottom: 10px;">
+      <p style="font-size: 16px; color: #555;">HackerRank</p>
+    </div>
+
+  </div>
+
+  <!-- Modal -->
+  <div id="noteModal" style="display: none; position: fixed; z-index: 999; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6);">
+    <div style="background-color: #fff; margin: 15% auto; padding: 20px 30px; border-radius: 10px; width: 80%; max-width: 500px; text-align: center; position: relative;">
+      <span onclick="closeNote()" style="position: absolute; top: 10px; right: 20px; font-size: 24px; cursor: pointer; color: #999;">&times;</span>
+      <p id="noteText" style="font-size: 18px; color: #333;"></p>
+    </div>
+  </div>
+</div>
+
+<script>
+  function showNote(platform) {
+    const notes = {
+      leetcode: "Solved 100+ algorithm problems including dynamic programming and system design patterns on LeetCode.",
+      skillrack: "Improved problem-solving efficiency with daily contests and logic-based exercises on Skillrack.",
+      codechef: "Participated in CodeChef Long and Cook-off challenges, learning time complexity and optimization.",
+      hackerrank: "Completed certifications in Python, SQL, and Problem Solving on HackerRank platform."
+    };
+    document.getElementById('noteText').innerText = notes[platform];
+    document.getElementById('noteModal').style.display = "block";
+  }
+
+  function closeNote() {
+    document.getElementById('noteModal').style.display = "none";
+  }
+</script>
+
+
+<script>
+  function showNote(platform) {
+    const notes = {
+      leetcode: "Solved 100+ algorithm problems including dynamic programming and system design patterns on LeetCode.",
+      skillrack: "Improved problem-solving efficiency with daily contests and logic-based exercises on Skillrack.",
+      codechef: "Participated in CodeChef Long and Cook-off challenges, learning time complexity and optimization.",
+      hackerrank: "Completed certifications in Python, SQL, and Problem Solving on HackerRank platform."
+    };
+    document.getElementById('noteText').innerText = notes[platform];
+    document.getElementById('noteModal').style.display = "block";
+  }
+
+  function closeNote() {
+    document.getElementById('noteModal').style.display = "none";
+  }
+</script>

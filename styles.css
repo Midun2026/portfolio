@@ -1,0 +1,268 @@
+/* General Styling */
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+
+
+/* Navbar container */
+.navbar {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: inherit; /* Keeps your original font */
+}
+
+/* Logo styling */
+.navbar-logo img {
+  height: 50px;
+}
+
+/* Group nav links and search box together */
+.navbar-links-and-search {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Equal spacing between all items */
+}
+
+/* Navigation links container */
+.navbar-links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 40px; /* Equal spacing between nav items */
+}
+
+/* Individual link items */
+.navbar-links ul li {
+  position: relative;
+}
+
+/* Link styling */
+.navbar-links ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 10px;
+  display: block;
+  font-size: 18px;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Search box styling */
+.search-box input[type="text"] {
+  padding: 6px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content { display: block; }
+
+/* Search Box */
+.search-box input[type="text"] {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Profile Section */
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.text { font-size: 24px; margin-left: 100px; }
+.text h1 { font-size: 36px; }
+.text span { font-weight: bold; color: lightseagreen; }
+
+button {
+  background: linear-gradient(45deg, #ff8c00, #ffd700);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0px 4px 15px rgba(255, 165, 0, 0.3);
+  text-transform: uppercase;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #ffd700, #ff8c00);
+  box-shadow: 0px 6px 20px rgba(255, 165, 0, 0.5);
+  transform: scale(1.1);
+}
+
+button:active { transform: scale(0.95); }
+
+/* Profile Images */
+.profile-image img {
+  max-width: 55%;
+  margin-left: 300px;
+  border: 5px solid #555;
+}
+
+.profile-image2 img {
+  max-width: 600%;
+  max-height: 500px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 150px;
+  border: 5px solid #555;
+}
+
+.profile-image2 { margin-left: 5%; }
+.profile-image2 img { border-radius: 10px; }
+
+/* About Section */
+.abt h1 {
+  color: white;
+  margin-left: 750px;
+  margin-top: -500px;
+}
+
+/* Content Box */
+.con {
+  font-family: Arial, sans-serif;
+  color: whitesmoke;
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 450px;
+  margin-right: 50px;
+  margin-top: -40px;
+  font-size: 25px;
+}
+
+.con p { line-height: 2; }
+.con p span { font-weight: bold; color: green; }
+
+/* Achievements Section */
+#achievements {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: whitesmoke;
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 300px;
+  font-size: 25px;
+}
+
+#achievements h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+}
+
+/* Projects Section */
+#projects {
+  background-color: rgba(0, 0, 0, 0.632);
+  color: black;
+  margin-left: 3vw;
+  border-radius: 10px;
+  width: 90vw;
+}
+
+/* Project Card Styling */
+.project-card {
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.project-card-bottom {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+/* Image Styling */
+.project-image {
+  width: 200px;
+  height:200px;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0px 0px 29px -4px rgba(0,0,0,0.67);
+}
+
+/* Coding Journey Popup */
+.platform-card { position: relative; text-align: center; cursor: pointer; }
+.platform-card img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  border-radius: 16px;
+  padding: 10px;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+.platform-card img:hover { transform: scale(1.1); }
+.popup {
+  display: none;
+  position: absolute;
+  top: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1a1a1a;
+  border: 1px solid #444;
+  border-radius: 12px;
+  padding: 15px;
+  width: 280px;
+  color: #f0f0f0;
+  font-size: 14px;
+}
+.popup h3 { color: #00ffcc; }
